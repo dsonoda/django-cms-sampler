@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>cognirobo saas | member site {% block title %}{% endblock %}</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    {# CSS file output block by page #}
+    {% block css %}{% endblock %}
+</head>
+<body>
+    <span>header クライアントサイド</span>
+    {% block header %}{% endblock %}
+    <hr>
+
+    {# Content output block by page #}
+    {% block content %}{% endblock %}
+
+    <hr>
+    <div>footer クライアントサイド</div>
+    {% block footer %}{% endblock %}
+
+    {# JS file output block by page #}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+    {% block js %}{% endblock %}
+</body>
+</html>
