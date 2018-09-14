@@ -1,4 +1,4 @@
-# django-cms-sampler
+django-cms-sampler
 ====
 Django cms application samples.
 
